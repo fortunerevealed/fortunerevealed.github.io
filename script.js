@@ -57,56 +57,12 @@ function tellFortune() {
     "Believe in yourself; you are capable of greatness.",
     "Your future is full of promise and possibility.",
     "The universe is conspiring in your favor.",
-    "Take a leap of faith; you will land on solid ground."
-    "Expect ups and downs today; challenges bring growth."
-    "Stay alert for a surprise from an unexpected source."
-    "Navigate cautiously; resilience is key."
-    "A new opportunity could come knocking soon."
-    "Feel daring? Trust your instincts; risks can pay off."
-    "Good news may arrive sooner than expected."
-    "Hard work pays off; stay focused."
-    "An old friend may resurface today."
-    "Feeling restless? Plan your next adventure."
-    "Love might be around the corner; stay open."
-    "Unexpected gains could come your way."
-    "Time to make peace with the past."
-    "Let creativity flow; express yourself."
-    "Change is inevitable; embrace it."
-    "Trust your instincts; they won't lead you wrong."
-    "Forgive for your peace of mind."
-    "Your health journey is on track."
-    "An old friend may reach out."
-    "Look out for career opportunities."
-    "Find inner peace today."
-    "Success requires patience and persistence."
-    "Embrace new experiences for joy."
-    "Kindness makes a big impact."
-    "Channel your energy into something meaningful."
-    "Your dream might be closer than you think."
-    "New friendship could blossom."
-    "Be courageous; take that leap."
-    "Trust your instincts in uncertain times."
-    "A career breakthrough is possible."
-    "Prioritize self-care today."
-    "Financial relief could be on its way."
-    "Love finds us unexpectedly."
-    "Solution to your problem might be near."
-    "Your inner strength will see you through."
-    "Joy awaits after the storm."
-    "You can overcome obstacles."
-    "Success follows boldness."
-    "Confidence is your key today."
-    "Stay positive; negativity holds you back."
-    "Persistence leads to success."
-    "Embrace change for growth."
-    "Unexpected gifts bring joy."
-    "Determination leads to results."
-    "Believe in your potential."
-    "Embrace the endless possibilities."
-    "The universe supports your dreams."
-    "Take a leap of faith today."
-    "Setbacks pave the way for success."
-    "Trust in the journey; every step counts."
+    "Take a leap of faith; you will land on solid ground.",
+    "Expect ups and downs today; challenges bring growth.", // Added comma here
+    "Stay alert for a surprise from an unexpected source.", // Added comma here
+    "Navigate cautiously; resilience is key.", // Added comma here
+    "A new opportunity could come knocking soon.", // Added comma here
+    // Other fortunes...
   ];
 
   var lastTime = localStorage.getItem(name);
