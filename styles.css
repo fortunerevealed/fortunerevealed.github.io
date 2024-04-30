@@ -1,0 +1,68 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('background.jpg'); /* Background image */
+  background-size: cover; /* Set background image to cover entire screen */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background for the container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 80%; /* Adjusted to use percentage for responsiveness */
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+label {
+  font-size: 16px;
+  color: #fff;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px 0;
+  width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #ffa500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff7f00;
+}
+
+#fortune {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #fff;
+}
