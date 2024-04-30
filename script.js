@@ -1,7 +1,13 @@
 document.getElementById("fortuneBtn").addEventListener("click", tellFortune);
 
 function tellFortune() {
-  var name = document.getElementById("name").value.toLowerCase();
+  var name = document.getElementById("name").value.trim().toLowerCase(); // Trim any whitespace from the input and convert to lowercase
+  if (name === "") {
+    // Display an error message if the name field is empty
+    document.getElementById("fortune").innerText = "Please enter your name before asking for your fortune!";
+    return; // Exit the function early if the name is empty
+  }
+
   var fortunes = [
     "You will have a great day!",
     "Expect a pleasant surprise!",
@@ -57,6 +63,9 @@ function tellFortune() {
   var lastTime = localStorage.getItem(name);
   var today = new Date().toLocaleDateString();
 
+  // Display loading sign
+  document.getElementById("fortune").innerText = "Loading...";
+
   if (!lastTime || today !== lastTime) {
     var formData = new FormData();
     formData.append("name", name);
@@ -73,6 +82,7 @@ function tellFortune() {
     })
     .catch(error => {
       console.error('Error submitting data:', error);
+      document.getElementById("fortune").innerText = "An error occurred while fetching your fortune. Please try again later.";
     });
   } else {
     document.getElementById("fortune").innerText = "Sorry, you can only receive one fortune per day!";
