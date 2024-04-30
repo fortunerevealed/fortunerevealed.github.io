@@ -57,12 +57,7 @@ function tellFortune() {
     "Believe in yourself; you are capable of greatness.",
     "Your future is full of promise and possibility.",
     "The universe is conspiring in your favor.",
-    "Take a leap of faith; you will land on solid ground.",
-    "Expect ups and downs today; challenges bring growth.", // Added comma here
-    "Stay alert for a surprise from an unexpected source.", // Added comma here
-    "Navigate cautiously; resilience is key.", // Added comma here
-    "A new opportunity could come knocking soon.", // Added comma here
-    // Other fortunes...
+    "Take a leap of faith; you will land on solid ground."
   ];
 
   var lastTime = localStorage.getItem(name);
