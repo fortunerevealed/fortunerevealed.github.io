@@ -8,13 +8,19 @@ function tellFortune() {
     return; // Exit the function early if the name is empty
   }
 
+  var specificFortunes = {
+    "thiesha": "The initial of your life partner's name is K, and the last letter may be N, P, or A.",
+    "danisa": "The initial of your life partner's name is K, and the last letter may be N, P, or A.",
+    "monicca": "The initial of your life partner's name is K, and the last letter may be N, P, or A."
+  };
+
   var fortunes = [
     "You will have a great day!",
     "Expect a pleasant surprise!",
     "Be cautious, challenges may arise.",
     "A new opportunity will present itself soon.",
     "Today is a good day to take risks.",
-    "You will receive good news shortly.", // Added missing comma here
+    "You will receive good news shortly.",
     "Your hard work will pay off.",
     "Someone from your past will return.",
     "Travel is in your future.",
@@ -76,9 +82,16 @@ function tellFortune() {
     })
     .then(response => response.text())
     .then(data => {
-      var randomIndex = Math.floor(Math.random() * fortunes.length);
-      document.getElementById("fortune").innerText = fortunes[randomIndex];
-      localStorage.setItem(name, today);
+      var fortune;
+      var lowerCaseName = name.toLowerCase();
+      if (specificFortunes.hasOwnProperty(lowerCaseName)) {
+        fortune = specificFortunes[lowerCaseName];
+      } else {
+        var randomIndex = Math.floor(Math.random() * fortunes.length);
+        fortune = fortunes[randomIndex];
+      }
+      document.getElementById("fortune").innerText = fortune;
+      localStorage.setItem(lowerCaseName, today);
     })
     .catch(error => {
       console.error('Error submitting data:', error);
